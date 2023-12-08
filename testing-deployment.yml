@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testing-flask
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: testing-flask
+  template:
+    metadata:
+      labels:
+        app: testing-flask
+    spec:
+      containers:
+      - name: testing-flask
+        image: andypradityo/myflaskapp:0
+        ports:
+        - containerPort: 5000
