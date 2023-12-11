@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: testing-flask
-        image: andypradityo/myflaskapp:0
+        image: andypradityo/myflaskapp:1
         ports:
         - containerPort: 5000
