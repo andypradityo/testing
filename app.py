@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello, Flask! [version 3]"
+    return "Hello, Flask! [version 4]"
 
 if __name__ == "__main__":
     # Please do not set debug=True in production
