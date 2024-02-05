@@ -9,12 +9,12 @@ spec:
   selector:
     matchLabels:
       app: testing-flask
-      sidecar.istio.io/inject: "true"
+#      sidecar.istio.io/inject: "true"
   template:
     metadata:
       labels:
         app: testing-flask
-        sidecar.istio.io/inject: "true"
+#        sidecar.istio.io/inject: "true"
     spec:
       containers:
       - name: testing-flask
