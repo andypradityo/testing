@@ -8,13 +8,19 @@ spec:
   selector:
     matchLabels:
       app: testing-flask
+      sidecar.istio.io/inject: "true"
   template:
     metadata:
       labels:
         app: testing-flask
+        sidecar.istio.io/inject: "true"
     spec:
       containers:
       - name: testing-flask
         image: andypradityo/myflaskapp:5
+        resources:
+            limits:
+              cpu: "0.25"
+              memory: 128M
         ports:
         - containerPort: 5000
