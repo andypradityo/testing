@@ -20,7 +20,7 @@ spec:
         image: andypradityo/myflaskapp:5
         resources:
             limits:
-              cpu: "0.25"
-              memory: 128M
+              cpu: "0.5"
+              memory: 64M
         ports:
         - containerPort: 5000
