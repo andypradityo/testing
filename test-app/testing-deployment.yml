@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: staging
   name: testing-flask
 spec:
   replicas: 1
